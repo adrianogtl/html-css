@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('/fontes/idroid.otf') format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    background-color: #EBE5C5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #2EA664, #19693C, #083D1E);
+}
+
+header>h1 {
+    text-align: center;
+    font: normal normal 3em 'Bebas Neue', sans-serif;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.308);
+    color: white;
+    margin: 0px;
+    padding: 20px;
+}
+
+header>p {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+/* menu de navegacao */
+nav {
+    background-color: #083D1E;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgb(0 0 0 / 19%);
+}
+
+nav>a {
+    color: #83E1AD;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav>a:hover {
+    background-color: #83E1AD;
+    color: #083D1E;
+    transition: 0.5s;
+
+}
+
+/* conteudo principal */
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 1px 7px 7px rgb(0 0 0 / 20%);
+    border-radius: 0px  0px 10px 10px;
+    margin-bottom: 30px;
+}
+
+article {
+    padding: 20px;
+}
+
+article>h1,
+h2 {
+    font-family: 'Idroid', sans-serif;
+    font-weight: normal;
+}
+
+article>h1 {
+    color: #083D1E;
+    font-size: 1.75em;
+}
+
+article>h2 {
+    color: #1A5C37;
+    background-image: linear-gradient(to right, #84E1AD, white 99%);
+    font-size: 1.3em;
+}
+
+/* links inicio */
+
+.links {
+    text-decoration: none;
+    background-color: #84E1AD;
+    padding: 1px;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: #1A5C37;
+}
+
+.links::after {
+    content: '\00A0\1F517';
+    background-color: #84E1AD;
+}
+
+/* geral */
+
+a{
+    text-decoration: none;
+}
+
+a>strong, p>strong {
+    color: #1A5C37;
+    font-weight: bold;
+} 
+
+article>p, aside>p {
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 2em;
+    padding: 5px;
+    margin: 20px;
+}
+
+
+.imagens {
+    width: 100%;
+}
+
+#bugdroid {
+    display: block;
+    margin:  auto;
+}
+
+/* video */
+div#video {
+    background-color: #083D1E;
+    height: 550px;
+}
+
+div#video>iframe {
+    position: absolute;
+    left: 26.3%;
+    top: 202.6%
+}
+/* quer aprender mais? */
+aside {
+    background-color: #83E1AD;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+aside>h3 {
+    margin-top: 30px;
+    background-color: #1A5C37;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside>ul {
+    margin-left: 40px;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+}
+
+/* rodape */
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    background-color: #083D1E;
+    padding: 5px;
+}
+
+.links-rodape {
+    color: white;
+    text-decoration: none;
+}
+
+.links-rodape:hover, footer>a:hover{
+    text-decoration: underline;
+    color: #83E1AD;
+}
