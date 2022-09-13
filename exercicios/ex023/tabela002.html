@@ -14,6 +14,24 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody>tr:nth-child(odd) {
+            /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody>tr:nth-child(even) {
+            /* 2n */
+            background-color: lightgray;
         }
 
         th,
@@ -26,6 +44,11 @@
         tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
         }
 
         .num {
@@ -46,10 +69,13 @@
                 TR, TD, TH 
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População total (2021)</th>
-            <th>% da População total</th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+                <th scope="col" style="width: 40px;">%</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -148,12 +174,12 @@
                 <td class="num">1,6%</td>
             </tr>
             <tr>
-                <td>Distrito Federa
+                <td>Distrito Federal</td>
                 <td class="num">3 094 325 </td>
                 <td class="num">1,4%</td>
             </tr>
             <tr>
-                <td>Mato Grosso do Su
+                <td>Mato Grosso do Sul</td>
                 <td class="num">2 839 188</td>
                 <td class="num">1,3%</td>
             </tr>
@@ -190,12 +216,81 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
-                <th class="num">213.317.639</th>
-                <th class="num">100%</th>
+                <th scope="row">Total</th>
+                <td class="num"><strong>213.317.639</strong></td>
+                <td class="num"><strong>100%</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias minima quibusdam voluptates, ut, iure
+        saepe, explicabo qui repellendus est consequuntur fugit laudantium dicta. Accusantium, libero? Consequuntur
+        blanditiis earum excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ab architecto,
+        necessitatibus illo maxime dicta iure officia labore tempora nisi perferendis explicabo dolor quas ut corporis
+        et saepe amet totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut quidem ab nulla
+        quibusdam illo eveniet in tempora sit dolor? Laboriosam, ipsam veniam quis error sunt earum placeat sed alias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum possimus facilis? Minima deleniti
+        nulla mollitia, ad, omnis velit maxime odio perspiciatis debitis, cupiditate aut repellendus et iste qui?
+        Quidem.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias minima quibusdam voluptates, ut, iure
+        saepe, explicabo qui repellendus est consequuntur fugit laudantium dicta. Accusantium, libero? Consequuntur
+        blanditiis earum excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ab architecto,
+        necessitatibus illo maxime dicta iure officia labore tempora nisi perferendis explicabo dolor quas ut corporis
+        et saepe amet totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut quidem ab nulla
+        quibusdam illo eveniet in tempora sit dolor? Laboriosam, ipsam veniam quis error sunt earum placeat sed alias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum possimus facilis? Minima deleniti
+        nulla mollitia, ad, omnis velit maxime odio perspiciatis debitis, cupiditate aut repellendus et iste qui?
+        Quidem.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias minima quibusdam voluptates, ut, iure
+        saepe, explicabo qui repellendus est consequuntur fugit laudantium dicta. Accusantium, libero? Consequuntur
+        blanditiis earum excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ab architecto,
+        necessitatibus illo maxime dicta iure officia labore tempora nisi perferendis explicabo dolor quas ut corporis
+        et saepe amet totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut quidem ab nulla
+        quibusdam illo eveniet in tempora sit dolor? Laboriosam, ipsam veniam quis error sunt earum placeat sed alias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum possimus facilis? Minima deleniti
+        nulla mollitia, ad, omnis velit maxime odio perspiciatis debitis, cupiditate aut repellendus et iste qui?
+        Quidem.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias minima quibusdam voluptates, ut, iure
+        saepe, explicabo qui repellendus est consequuntur fugit laudantium dicta. Accusantium, libero? Consequuntur
+        blanditiis earum excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ab architecto,
+        necessitatibus illo maxime dicta iure officia labore tempora nisi perferendis explicabo dolor quas ut corporis
+        et saepe amet totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut quidem ab nulla
+        quibusdam illo eveniet in tempora sit dolor? Laboriosam, ipsam veniam quis error sunt earum placeat sed alias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum possimus facilis? Minima deleniti
+        nulla mollitia, ad, omnis velit maxime odio perspiciatis debitis, cupiditate aut repellendus et iste qui?
+        Quidem.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias minima quibusdam voluptates, ut, iure
+        saepe, explicabo qui repellendus est consequuntur fugit laudantium dicta. Accusantium, libero? Consequuntur
+        blanditiis earum excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ab architecto,
+        necessitatibus illo maxime dicta iure officia labore tempora nisi perferendis explicabo dolor quas ut corporis
+        et saepe amet totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut quidem ab nulla
+        quibusdam illo eveniet in tempora sit dolor? Laboriosam, ipsam veniam quis error sunt earum placeat sed alias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum possimus facilis? Minima deleniti
+        nulla mollitia, ad, omnis velit maxime odio perspiciatis debitis, cupiditate aut repellendus et iste qui?
+        Quidem.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias minima quibusdam voluptates, ut, iure
+        saepe, explicabo qui repellendus est consequuntur fugit laudantium dicta. Accusantium, libero? Consequuntur
+        blanditiis earum excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ab architecto,
+        necessitatibus illo maxime dicta iure officia labore tempora nisi perferendis explicabo dolor quas ut corporis
+        et saepe amet totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut quidem ab nulla
+        quibusdam illo eveniet in tempora sit dolor? Laboriosam, ipsam veniam quis error sunt earum placeat sed alias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum possimus facilis? Minima deleniti
+        nulla mollitia, ad, omnis velit maxime odio perspiciatis debitis, cupiditate aut repellendus et iste qui?
+        Quidem.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias minima quibusdam voluptates, ut, iure
+        saepe, explicabo qui repellendus est consequuntur fugit laudantium dicta. Accusantium, libero? Consequuntur
+        blanditiis earum excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ab architecto,
+        necessitatibus illo maxime dicta iure officia labore tempora nisi perferendis explicabo dolor quas ut corporis
+        et saepe amet totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ut quidem ab nulla
+        quibusdam illo eveniet in tempora sit dolor? Laboriosam, ipsam veniam quis error sunt earum placeat sed alias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum possimus facilis? Minima deleniti
+        nulla mollitia, ad, omnis velit maxime odio perspiciatis debitis, cupiditate aut repellendus et iste qui?
+        Quidem.</p>
 </body>
 
 </html>
