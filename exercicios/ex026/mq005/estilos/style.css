@@ -12,7 +12,7 @@ html {
 }
 
 header {
-    background-color: rgb(133, 133, 133);
+    background-color: gray;
 }
 
 header>h1 {
@@ -29,10 +29,10 @@ span#burguer {
     cursor: pointer;
 }
 
-span#burguer:hover{
+span#burguer:hover {
     background-color: white;
     color: black;
-
+    transition: .4s;
 }
 
 menu {
@@ -54,7 +54,8 @@ menu>ul>li>a {
 }
 
 menu>ul>li>a:hover {
-    background-color: gray;
+    background-color: darkgray;
+    transition: .5s;
 }
 
 main {
@@ -62,16 +63,34 @@ main {
     background-color: white;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 10px;
 }
 
 article>h2 {
     padding-bottom: 20px;
+    margin-left: 30px;
 }
 
 article>p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+footer>p>a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer>p>a:hover {
+    text-decoration: underline;
 }

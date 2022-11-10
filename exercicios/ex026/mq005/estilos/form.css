@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    height: 88vh;
+}
+
+form {
+    margin: 30px;
+}
+
+input,
+textarea {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: gray;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgray;
+    transition: .3s;
+}
