@@ -2,27 +2,34 @@
     box-sizing: border-box;
 }
 
-main {
-    height: 88vh;
+article>h2 {
+    padding-bottom: 5px;
 }
 
 form {
-    margin: 30px;
+    margin: 0px 30px;
 }
 
 input,
 textarea {
     display: block;
     margin-top: 5px;
-    margin-bottom: 20px;
+
     padding: 5px;
     border-radius: 10px;
     border-color: gray;
     outline: none;
 }
 
+input {
+    margin-bottom: 10px;
+}
+
+
 input[type="submit"] {
+    display: block;
     padding: 10px;
+    margin-top: 10px;
     background-color: gray;
     color: white;
     border: none;
